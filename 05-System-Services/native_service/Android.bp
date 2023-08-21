@@ -1,0 +1,30 @@
+cc_library_shared {
+    name: "libmy_light",
+    proprietary: true,
+    srcs: [
+        "IMyLight.cpp",  
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libbinder",
+    ],
+}
+
+cc_binary {
+    name: "nativeservice",
+    proprietary: true,
+    srcs: [
+        "service.cpp",
+        ],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libcutils",
+        "libbinder",
+        "libmy_light",
+    ],
+}
+

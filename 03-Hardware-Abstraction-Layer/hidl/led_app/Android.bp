@@ -1,0 +1,15 @@
+android_app {
+    name: "DemoledApp",
+    platform_apis: true,
+    libs: ["framework",
+          ],
+    srcs: [
+        "java/**/*.java",
+        "aidl/**/I*.aidl",
+    ],
+    static_libs: [
+    "arpi.hardware.demoled-V1.0-java",
+    "androidx.appcompat_appcompat",
+    ],
+    resource_dirs: ["res"],
+}

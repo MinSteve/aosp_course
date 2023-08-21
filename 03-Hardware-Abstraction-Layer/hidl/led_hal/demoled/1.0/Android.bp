@@ -1,0 +1,11 @@
+hidl_interface {
+    name: "arpi.hardware.demoled@1.0",
+    root: "arpi.hardware",
+    srcs: [
+        "IDemoled.hal",
+    ],
+    interfaces: [
+        "android.hidl.base@1.0",
+    ],
+    gen_java: true,
+}

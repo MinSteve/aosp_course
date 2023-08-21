@@ -1,0 +1,14 @@
+cc_binary {
+    name: "native_start_java",
+
+    srcs: ["main.cpp"],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libcutils",
+        "libbinder",
+        "libandroid_runtime",
+    ],
+
+}

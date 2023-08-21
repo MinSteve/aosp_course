@@ -1,0 +1,26 @@
+cc_binary {
+    relative_install_path: "hw",
+    name: "test_demo",
+    proprietary: true,
+    srcs: ["demo.cpp",
+           "demoled_ctrl.c"
+          ],
+
+}
+
+cc_binary {
+    relative_install_path: "hw",
+    name: "input_test",
+    proprietary: true,
+    srcs: ["get_input_bk.c",
+          ],
+}
+
+cc_binary {
+    relative_install_path: "hw",
+    name: "test_input",
+    proprietary: true,
+    srcs: ["get_input.c",
+           "list_files.c",
+          ],
+}

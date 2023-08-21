@@ -1,0 +1,14 @@
+cc_binary {
+    name: "test_nativeservice",
+    proprietary: true,
+    srcs: ["test.cpp"],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libcutils",
+        "libbinder",
+        "libmy_light",
+    ],
+
+}

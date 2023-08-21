@@ -1,0 +1,4 @@
+service vendor.demoled-hal-1.0 /vendor/bin/hw/arpi.hardware.demoled@1.0-service
+    class hal
+    user system
+    group system

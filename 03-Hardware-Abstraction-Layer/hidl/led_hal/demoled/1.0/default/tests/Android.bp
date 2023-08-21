@@ -1,0 +1,16 @@
+cc_binary {
+    relative_install_path: "hw",
+    defaults: ["hidl_defaults"],
+    name: "demoled_test",
+    vendor: true,
+    srcs: ["demoled_test.cpp"],
+
+    shared_libs: [
+        "liblog",
+        "libhardware",
+        "libhidlbase",
+        "libutils",
+        "arpi.hardware.demoled@1.0",
+    ],
+
+}
