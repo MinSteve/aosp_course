@@ -1,0 +1,12 @@
+java_library_static {
+    name: "CocktailLedExtendedManager",
+    sdk_version: "current",
+
+    srcs : [
+        "src/main/java/**/*.java",
+    ],
+    static_libs : [
+        "LedExtendedApi",
+        "androidx.annotation_annotation",
+    ],
+}

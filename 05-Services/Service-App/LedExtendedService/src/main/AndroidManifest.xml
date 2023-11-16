@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cocktail.ledextendedservice"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <user-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <permission
+        android:name="com.cocktail.audioextendedapi.permission.USE_AUDIOEXTENDED_API"
+        android:description="@string/use_audioextended_api_permission_description"
+        android:label="@string/use_audioextended_api_permission_label"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="false"
+        android:directBootAware="true"
+        android:enabled="true"
+        tools:ignore="MissingApplicationIcon">
+
+        <service
+            android:name=".LedExtendedService"
+            android:foregroundServiceType="dataSync"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+type cocktail_led_extended_service, domain, coredomain;
+
+cocktail_trusted_app_domain(cocktail_audio_extended_service)
+
+hal_client_domain(cocktail_led_extended_service, hal_led);
+allow cocktail_audio_extended_service {
+    led_service
+    ledserver_service
+}:service_manager find;
+
+# hard fix
+
+hal_client_domain(platform_app, hal_led)
+allow platform_app {
+    led_service
+    ledserver_service
+}:service_manager find;

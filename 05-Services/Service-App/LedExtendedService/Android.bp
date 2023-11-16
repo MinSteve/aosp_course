@@ -1,0 +1,18 @@
+android_app {
+    name: "CocktailLedExtendedService",
+    manifest : "src/main/AndroidManifest.xml",
+    certificate : "platform",
+    system_ext_specific: true,
+    privileged : true,
+    platform_apis : true,
+
+    srcs : ["src/main/java/**/*.java"],
+    resource_dirs : ["src/main/res"],
+    static_libs : [
+        "LedExtendedApi",
+        "androidx.annotation_annotation",
+        "androidx.preference_preference",
+        "vendor.cocktail.hardware.led-V1-java",
+        "Slogf",
+    ],
+}
