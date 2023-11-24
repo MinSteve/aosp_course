@@ -1,0 +1,27 @@
+cc_binary {
+    name: "vendor.cocktail.hardware.led-service",
+    vendor: true,
+    relative_install_path: "hw",
+    init_rc: ["vendor.cocktail.hardware.led-service.rc"],
+    vintf_fragments: ["vendor.cocktail.hardware.led-service.xml"],
+
+    srcs: [
+        "Led.cpp",
+        "service.cpp",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+
+    shared_libs: [
+        "libbase",
+        "liblog",
+        "libhardware",
+        "libbinder_ndk",
+        "libbinder",
+        "libutils",
+        "vendor.cocktail.hardware.led-V1-ndk",
+    ],
+}
