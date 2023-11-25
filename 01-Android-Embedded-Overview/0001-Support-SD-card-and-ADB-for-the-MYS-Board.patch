@@ -1,0 +1,105 @@
+From 4bbe846051694f86cae43b42e5d8725e48cb0d55 Mon Sep 17 00:00:00 2001
+From: MinSteve <min98st1@gmail.com>
+Date: Sun, 26 Nov 2023 02:29:02 +0700
+Subject: [PATCH] Support SD card and ADB for the MYS Board
+
+Signed-off-by: MinSteve <min98st1@gmail.com>
+---
+ arch/arm64/boot/dts/freescale/imx8mm-evk.dtsi | 44 ++-----------------
+ 1 file changed, 4 insertions(+), 40 deletions(-)
+
+diff --git a/arch/arm64/boot/dts/freescale/imx8mm-evk.dtsi b/arch/arm64/boot/dts/freescale/imx8mm-evk.dtsi
+index 6830faf48e6c..9d23536374de 100644
+--- a/arch/arm64/boot/dts/freescale/imx8mm-evk.dtsi
++++ b/arch/arm64/boot/dts/freescale/imx8mm-evk.dtsi
+@@ -47,18 +47,6 @@ reg_audio_board: regulator-audio-board {
+ 		regulator-always-on;
+ 	};
+ 
+-	reg_usdhc2_vmmc: regulator-usdhc2 {
+-		compatible = "regulator-fixed";
+-		pinctrl-names = "default";
+-		pinctrl-0 = <&pinctrl_reg_usdhc2_vmmc>;
+-		regulator-name = "VSD_3V3";
+-		regulator-min-microvolt = <3300000>;
+-		regulator-max-microvolt = <3300000>;
+-		gpio = <&gpio2 19 GPIO_ACTIVE_HIGH>;
+-		off-on-delay-us = <20000>;
+-		enable-active-high;
+-	};
+-
+ 	ir-receiver {
+ 		compatible = "gpio-ir-receiver";
+ 		gpios = <&gpio1 13 GPIO_ACTIVE_LOW>;
+@@ -405,12 +393,6 @@ ptn5110: tcpc@50 {
+ 		interrupts = <11 8>;
+ 		status = "okay";
+ 
+-		port {
+-			typec1_dr_sw: endpoint {
+-				remote-endpoint = <&usb1_drd_sw>;
+-			};
+-		};
+-
+ 		typec1_con: connector {
+ 			compatible = "usb-c-connector";
+ 			label = "USB-C";
+@@ -692,20 +674,9 @@ &uart3 {
+ 
+ &usbotg1 {
+ 	dr_mode = "otg";
+-	hnp-disable;
+-	srp-disable;
+-	adp-disable;
+-	usb-role-switch;
+-	disable-over-current;
+-	samsung,picophy-pre-emp-curr-control = <3>;
+-	samsung,picophy-dc-vol-level-adjust = <7>;
++	picophy,pre-emp-curr-control = <3>;
++	picophy,dc-vol-level-adjust = <7>;
+ 	status = "okay";
+-
+-	port {
+-		usb1_drd_sw: endpoint {
+-			remote-endpoint = <&typec1_dr_sw>;
+-		};
+-	};
+ };
+ 
+ &usdhc2 {
+@@ -715,9 +686,8 @@ &usdhc2 {
+ 	pinctrl-0 = <&pinctrl_usdhc2>, <&pinctrl_usdhc2_gpio>;
+ 	pinctrl-1 = <&pinctrl_usdhc2_100mhz>, <&pinctrl_usdhc2_gpio>;
+ 	pinctrl-2 = <&pinctrl_usdhc2_200mhz>, <&pinctrl_usdhc2_gpio>;
+-	cd-gpios = <&gpio1 15 GPIO_ACTIVE_LOW>;
++	cd-gpios = <&gpio2 12 GPIO_ACTIVE_LOW>;
+ 	bus-width = <4>;
+-	vmmc-supply = <&reg_usdhc2_vmmc>;
+ 	status = "okay";
+ };
+ 
+@@ -873,12 +843,6 @@ MX8MM_IOMUXC_GPIO1_IO03_GPIO1_IO3		0x141
+ 		>;
+ 	};
+ 
+-	pinctrl_reg_usdhc2_vmmc: regusdhc2vmmcgrp {
+-		fsl,pins = <
+-			MX8MM_IOMUXC_SD2_RESET_B_GPIO2_IO19	0x41
+-		>;
+-	};
+-
+ 	pinctrl_sai1: sai1grp {
+ 		fsl,pins = <
+ 			MX8MM_IOMUXC_SAI1_MCLK_SAI1_MCLK	0xd6
+@@ -1022,7 +986,7 @@ MX8MM_IOMUXC_SD1_DATA3_USDHC1_DATA3	0x1d6
+ 
+ 	pinctrl_usdhc2_gpio: usdhc2grpgpiogrp {
+ 		fsl,pins = <
+-			MX8MM_IOMUXC_GPIO1_IO15_GPIO1_IO15	0x1c4
++			MX8MM_IOMUXC_SD2_RESET_B_GPIO2_IO19	0x1c4
+ 		>;
+ 	};
+ 
+-- 
+2.25.1
+

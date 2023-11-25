@@ -1,0 +1,46 @@
+From 42e34e7ee81784febbbce0a7a7604b42e36375ed Mon Sep 17 00:00:00 2001
+From: MinSteve <min98st1@gmail.com>
+Date: Sun, 26 Nov 2023 02:28:03 +0700
+Subject: [PATCH] Support SD card for the MYS Board
+
+Signed-off-by: MinSteve <min98st1@gmail.com>
+---
+ arch/arm/dts/imx8mm-evk.dtsi | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/arch/arm/dts/imx8mm-evk.dtsi b/arch/arm/dts/imx8mm-evk.dtsi
+index d95d3c3820..88fcb21055 100644
+--- a/arch/arm/dts/imx8mm-evk.dtsi
++++ b/arch/arm/dts/imx8mm-evk.dtsi
+@@ -32,12 +32,13 @@
+ 	reg_usdhc2_vmmc: regulator-usdhc2 {
+ 		compatible = "regulator-fixed";
+ 		pinctrl-names = "default";
+-		pinctrl-0 = <&pinctrl_reg_usdhc2_vmmc>;
+ 		regulator-name = "VSD_3V3";
+ 		regulator-min-microvolt = <3300000>;
+ 		regulator-max-microvolt = <3300000>;
+ 		gpio = <&gpio2 19 GPIO_ACTIVE_HIGH>;
+ 		enable-active-high;
++		startup-delay-us = <100>;
++		u-boot,off-on-delay-us = <12000>;
+ 	};
+ 
+ 	ir-receiver {
+@@ -400,11 +401,11 @@
+ 	assigned-clocks = <&clk IMX8MM_CLK_USDHC2>;
+ 	assigned-clock-rates = <200000000>;
+ 	pinctrl-names = "default", "state_100mhz", "state_200mhz";
+-	pinctrl-0 = <&pinctrl_usdhc2>, <&pinctrl_usdhc2_gpio>;
++	pinctrl-0 = <&pinctrl_usdhc2>, <&pinctrl_reg_usdhc2_vmmc>;
+ 	pinctrl-1 = <&pinctrl_usdhc2_100mhz>, <&pinctrl_usdhc2_gpio>;
+ 	pinctrl-2 = <&pinctrl_usdhc2_200mhz>, <&pinctrl_usdhc2_gpio>;
+-	cd-gpios = <&gpio1 15 GPIO_ACTIVE_LOW>;
+ 	bus-width = <4>;
++	non-removable;
+ 	vmmc-supply = <&reg_usdhc2_vmmc>;
+ 	status = "okay";
+ };
+-- 
+2.25.1
+
