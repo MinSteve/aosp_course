@@ -31,6 +31,7 @@ public class LedExtendedService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         startForeground();
         Log.d(TAG, "LedExtendedService start");
+        return START_STICKY;
     }
 
     @Override

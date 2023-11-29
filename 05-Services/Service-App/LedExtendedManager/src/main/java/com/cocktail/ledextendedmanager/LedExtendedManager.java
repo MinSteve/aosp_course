@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 
 import com.cocktail.ledextendedapi.ILedExtendedCallback;
 import com.cocktail.ledextendedapi.ILedExtendedService;
+
 public class LedExtendedManager {
     private static final String TAG = "LedExtendedManager";
     private static final String LED_SETTINGS_PACKAGE = "com.cocktail.audioextendedservice";
@@ -73,7 +74,7 @@ public class LedExtendedManager {
         mService.subscribe(callback);
     }
 
-    public void unsubscribe(@NonNull IAudioExtendedCallback callback) throws RemoteException {
+    public void unsubscribe(@NonNull ILedExtendedCallback callback) throws RemoteException {
         if (mService == null) {
             throw new RemoteException("Service not connected");
         }
@@ -88,7 +89,7 @@ public class LedExtendedManager {
     public void setLed(int value) {
         Log.d(TAG, "setLed with " + value);
         try {
-            return mService.setLed(value);
+            mService.setLed(value);
         } catch (RemoteException e) {
             Log.e(TAG, "Error running setLed", e);
         }
@@ -105,6 +106,7 @@ public class LedExtendedManager {
             return mService.getLed();
         } catch (RemoteException e) {
             Log.e(TAG, "Error running getLed", e);
+            return -1;
         }
     }
 }

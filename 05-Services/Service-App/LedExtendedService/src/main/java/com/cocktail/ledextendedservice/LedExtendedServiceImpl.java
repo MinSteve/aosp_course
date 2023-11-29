@@ -38,6 +38,21 @@ public class LedExtendedServiceImpl extends ILedExtendedService.Stub {
         }
     }
 
+    /**
+     * Returns the led value
+     * 
+     * @hide
+     */
     @Override
-    public int
+    public void setLed(int value) {
+        Log.i(TAG, "setLed");
+        mLedControlClient.setLed(value);
+        mValue = value;
+    }
+
+    @Override
+    public int getLed() {
+        Log.i(TAG, "getLed");
+        return mValue;
+    }
 }

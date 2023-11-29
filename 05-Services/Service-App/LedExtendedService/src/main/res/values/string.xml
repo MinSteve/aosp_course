@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="use_ledextended_api_permission_label">Use LedExtended API</string>
+    <string name="use_ledextended_api_permission_description">Allows an app to use the LedExtended API</string>
+</resources>

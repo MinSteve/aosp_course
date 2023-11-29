@@ -22,7 +22,7 @@ public class LedControlClient {
     private static final String LED_CONTROL_SERVICE =
             "vendor.cocktail.hardware.led.ILed/default";
     private static LedControlClient mLedControlClient;
-    private Ibinder mBinder;
+    private IBinder mBinder;
     private ILed mLed;
     private boolean mListenerRegistered = false;
     static @Nullable IBinder getService() {
@@ -42,7 +42,7 @@ public class LedControlClient {
     }
 
     public void init() {
-        mBinder = Object.requireNonNull(getService());
+        mBinder = Objects.requireNonNull(getService());
         mLed = ILed.Stub.asInterface(mBinder);
     }
 
@@ -59,6 +59,7 @@ public class LedControlClient {
             return mLed.getLed();
         } catch (RemoteException e) {
             Log.e(TAG, "getLed failed " + e);
+            return -1;
         }
     }
 }

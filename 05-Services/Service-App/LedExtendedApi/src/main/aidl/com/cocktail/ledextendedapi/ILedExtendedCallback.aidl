@@ -6,7 +6,7 @@ package com.cocktail.ledextendedapi;
  *
  * @hide
  */
-interface ILedExentedCallback {
+interface ILedExtendedCallback {
     /**
      * Demonstrates some basic types that you can use as parameters
      * and return values in AIDL.
