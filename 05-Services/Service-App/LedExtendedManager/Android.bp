@@ -5,8 +5,8 @@ java_library_static {
     srcs : [
         "src/main/java/**/*.java",
     ],
+    libs : ["androidx.annotation_annotation"],
     static_libs : [
         "LedExtendedApi",
-        "androidx.annotation_annotation",
     ],
 }

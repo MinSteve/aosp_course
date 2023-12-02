@@ -2,13 +2,10 @@ java_library {
     name: "LedExtendedApi",
     sdk_version: "current",
 
-    srcs : [
+    srcs: [
         "src/main/aidl/**/*.aidl",
     ],
     aidl: {
-        local_include_dirs : ["src/main/aidl"],
+        local_include_dirs: ["src/main/aidl"],
     },
-    static_libs: [
-        "androidx.annotation_annotation",
-    ],
 }

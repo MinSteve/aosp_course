@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <permission
-        android:name="com.cocktail.audioextendedapi.permission.USE_LEDEXTENDED_API"
+        android:name="com.cocktail.ledextendedapi.permission.USE_LEDEXTENDED_API"
         android:description="@string/use_ledextended_api_permission_description"
         android:label="@string/use_ledextended_api_permission_label"
         android:protectionLevel="signature" />

@@ -17,8 +17,6 @@ public class LedExtendedService extends Service {
     public static final String TAG = LedExtendedService.class.getSimpleName();
     private LedExtendedServiceImpl mService;
     private Bitmap mTestBitmap;
-    public LedExtendedService() {
-    }
 
     @Override
     public void onCreate() {
@@ -67,7 +65,7 @@ public class LedExtendedService extends Service {
         notificationManager.createNotificationChannel(channel);
 
         final Notification.Builder notificationBuilder =
-                new Notification.Builder(this, "Cocktail/AudioExtendedService");
+                new Notification.Builder(this, "Cocktail/LedExtendedService");
 
         final Notification notification = notificationBuilder.setOngoing(true)
                 .setContentTitle("App is running")

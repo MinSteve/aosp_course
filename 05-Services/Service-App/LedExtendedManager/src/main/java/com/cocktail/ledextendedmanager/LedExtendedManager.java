@@ -15,7 +15,7 @@ import com.cocktail.ledextendedapi.ILedExtendedService;
 
 public class LedExtendedManager {
     private static final String TAG = "LedExtendedManager";
-    private static final String LED_SETTINGS_PACKAGE = "com.cocktail.audioextendedservice";
+    private static final String LED_SETTINGS_PACKAGE = "com.cocktail.ledextendedservice";
     private static final String LED_SETTINGS_CLASS =
             "com.cocktail.ledextendedservice.LedExtendedService";
     private boolean mBound;
