@@ -1,0 +1,3 @@
+attribute hal_led;
+attribute hal_led_client;
+attribute hal_led_server;

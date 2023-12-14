@@ -22,14 +22,12 @@ Copy *led_extended_service* folder to *device/imx8/imx8mm/sepolicy/components*
 
 **Add Service in the System**
 ```diff
-+#################################
++
 +# LedExtendedService
-+#################################
 +PRODUCT_PACKAGES += CocktailLedExtendedService
-+$(call inherit-product, $(EVK_8MM_PATH_DEVICE)/sepolicy/components/led_extended_service/sepolicy.mk)
 +
 ```
-*evk_8mm.mk*
+*imx8m/evk_8mm/evk_8mm.mk*
 
 
 ## Test

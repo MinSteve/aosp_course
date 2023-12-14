@@ -1,1 +1,0 @@
-include $(LOCAL_PATH)/../common.mk

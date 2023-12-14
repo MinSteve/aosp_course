@@ -27,7 +27,7 @@ public:
 };
 
 /*
- * Ensure inverses the character's case work
+ * Ensure setLed and getled work
  */
 TEST_P(LedAidl, TestLed) {
     std::int32_t setValue = 1;
