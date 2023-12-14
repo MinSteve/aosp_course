@@ -1,6 +1,6 @@
 aidl_interface {
     name: "vendor.cocktail.hardware.led",
-    vendor: true,
+    vendor_available: true,
     srcs: ["vendor/cocktail/hardware/led/*.aidl"],
     stability: "vintf",
     owner: "dungta",

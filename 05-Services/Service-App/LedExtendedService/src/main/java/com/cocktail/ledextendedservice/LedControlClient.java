@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2023 Dung Tran Anh
+ */
+
 package com.cocktail.ledextendedservice;
 
 import vendor.cocktail.hardware.led.ILed;

@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2023 Dung Tran Anh
+ */
+
 #include <linux/module.h>    // all kernel modules
 #include <linux/kernel.h>    // KERN_INFO
 #include <linux/errno.h>     // EFAULT

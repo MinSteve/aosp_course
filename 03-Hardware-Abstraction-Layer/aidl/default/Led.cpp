@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2023 Dung Tran Anh
+ */
+
 #define LOG_TAG "Led"
 
 #include <utils/Log.h>
@@ -15,10 +19,10 @@ ndk::ScopedAStatus Led::getLed(int32_t* _aidl_return) {
     std::ifstream led_dev;
     led_dev.open("/sys/devices/platform/demo_led/demo_led");
     if(led_dev.good()) {
-        int32_t line;
-        led_dev >> line;
-        ALOGD("Led service: getLed: %d", line);
-        *_aidl_return =  line;
+        int32_t value;
+        led_dev >> value;
+        ALOGD("Led service: getLed: %d", value);
+        *_aidl_return =  value;
     } else {
         ALOGE("getLed: can not open /sys/devices/platform/demo_led/demo_led");
         return ndk::ScopedAStatus::fromServiceSpecificError(-1);
@@ -28,12 +32,12 @@ ndk::ScopedAStatus Led::getLed(int32_t* _aidl_return) {
 
 ndk::ScopedAStatus Led::setLed(int32_t in_status) {
     std::ofstream led_dev;
-    led_dev.open ("/sys/devices/platform/demo_led/demo_led");
+    led_dev.open("/sys/devices/platform/demo_led/demo_led");
     if(led_dev.good()) {
         led_dev << in_status;
-        ALOGD("Invcase service: putChars: %d", in_status);
+        ALOGD("Led service: setLed: %d", in_status);
     } else {
-        ALOGE("setLed: can not open /sys/devices/platform/demo_led/demo_led");
+        ALOGE("setLed: Can not open /sys/devices/platform/demo_led/demo_led");
         return ndk::ScopedAStatus::fromServiceSpecificError(-1);
     }
     return ndk::ScopedAStatus::ok();

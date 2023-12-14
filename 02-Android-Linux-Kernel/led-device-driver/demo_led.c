@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2023 Dung Tran Anh
+ */
+
 #include <linux/kernel.h>
 #include <linux/module.h>
 #include <linux/init.h>

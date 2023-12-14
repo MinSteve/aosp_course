@@ -1,0 +1,178 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+BACK_KEY	08-Input-Framework/input_driver/input_driver.c	/^#define BACK_KEY	/;"	d	file:
+BINARY	02-Android-Linux-Kernel/character-device-driver/Makefile	/^BINARY := char_dev$/;"	m
+BUFFER_SIZE	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/input_get.c	/^#define BUFFER_SIZE /;"	d	file:
+BUILD	02-Android-Linux-Kernel/character-device-driver/Makefile	/^BUILD := \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+CLASS_NAME	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^#define CLASS_NAME /;"	d	file:
+DEVICE_DEBUG	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^#define DEVICE_DEBUG /;"	d	file:
+DEVICE_NAME	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^#define DEVICE_NAME /;"	d	file:
+DOWN_KEY	08-Input-Framework/input_driver/input_driver.c	/^#define DOWN_KEY	/;"	d	file:
+DemoLed	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo.cpp	/^	DemoLed()$/;"	f	struct:DemoLed	file:
+DemoLed	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo.cpp	/^struct DemoLed {$/;"	s	file:
+Demoled	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^Demoled::Demoled() {$/;"	f	class:arpi::hardware::demoled::implementation::Demoled
+Demoled	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.h	/^struct Demoled : public V1_0::IDemoled {$/;"	s	namespace:arpi::hardware::demoled::implementation
+ENTER_KEY	08-Input-Framework/input_driver/input_driver.c	/^#define ENTER_KEY	/;"	d	file:
+EVENT_SIZE	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/input_get.c	/^#define EVENT_SIZE /;"	d	file:
+FILE_EXIST	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/get_input.c	/^#define FILE_EXIST(/;"	d	file:
+FILE_EXIST	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/input_get.c	/^#define FILE_EXIST(/;"	d	file:
+INPUT_DEVICE	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/get_input_bk.c	/^#define INPUT_DEVICE /;"	d	file:
+INPUT_DIR	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/get_input.c	/^#define INPUT_DIR /;"	d	file:
+INPUT_DIR	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/input_get.c	/^#define INPUT_DIR /;"	d	file:
+LED_PATH	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.c	/^#define LED_PATH /;"	d	file:
+LED_PATH	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo2.c	/^#define LED_PATH /;"	d	file:
+LED_PATH	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.c	/^#define LED_PATH /;"	d	file:
+LEFT_KEY	08-Input-Framework/input_driver/input_driver.c	/^#define LEFT_KEY	/;"	d	file:
+LOG_TAG	03-Hardware-Abstraction-Layer/aidl/default/Led.cpp	/^#define LOG_TAG /;"	d	file:
+LOG_TAG	03-Hardware-Abstraction-Layer/aidl/default/service.cpp	/^#define LOG_TAG /;"	d	file:
+LOG_TAG	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^#define LOG_TAG /;"	d	file:
+LOG_TAG	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.c	/^#define LOG_TAG /;"	d	file:
+LOG_TAG	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/service.cpp	/^#define LOG_TAG /;"	d	file:
+LOG_TAG	09-VTS/vts/VtsAidlLedTest.cpp	/^#define LOG_TAG /;"	d	file:
+Led	03-Hardware-Abstraction-Layer/aidl/default/Led.h	/^class Led : public BnLed {$/;"	c	namespace:aidl::vendor::cocktail::hardware::led
+LedAidl	09-VTS/vts/VtsAidlLedTest.cpp	/^class LedAidl : public testing::TestWithParam<std::string> {$/;"	c	file:
+MAX_EVENTS	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/get_input.c	/^#define MAX_EVENTS /;"	d	file:
+MAX_EVENTS	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/input_get.c	/^#define MAX_EVENTS /;"	d	file:
+MAX_SIZE	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^#define MAX_SIZE /;"	d	file:
+MAX_SIZE_OF_FILE_NAME	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/input_get.c	/^#define MAX_SIZE_OF_FILE_NAME	/;"	d	file:
+NUMBER_OF_GPIO_PIN	08-Input-Framework/input_driver/input_driver.c	/^#define NUMBER_OF_GPIO_PIN	/;"	d	file:
+RIGHT_KEY	08-Input-Framework/input_driver/input_driver.c	/^#define RIGHT_KEY	/;"	d	file:
+SetUp	09-VTS/vts/VtsAidlLedTest.cpp	/^    virtual void SetUp() override {$/;"	f	class:LedAidl	typeref:typename:void	file:
+TEST_P	09-VTS/vts/VtsAidlLedTest.cpp	/^TEST_P(LedAidl, TestLed) {$/;"	f
+UP_KEY	08-Input-Framework/input_driver/input_driver.c	/^#define UP_KEY	/;"	d	file:
+__DEMOLED__	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.h	/^#define __DEMOLED__$/;"	d
+__DEMOLED__	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.h	/^#define __DEMOLED__$/;"	d
+__LIST_FILE_H__	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/list_files.h	/^#define __LIST_FILE_H__$/;"	d
+__buffer	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^static char __buffer[MAX_SIZE] = {0};$/;"	v	typeref:typename:char[]	file:
+__fops	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^static struct file_operations __fops = $/;"	v	typeref:struct:file_operations	file:
+add_new_file	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/list_files.c	/^static void add_new_file(struct list_file **head, char *file_name)$/;"	f	typeref:typename:void	file:
+aidl	03-Hardware-Abstraction-Layer/aidl/default/Led.cpp	/^namespace aidl {$/;"	n	file:
+aidl	03-Hardware-Abstraction-Layer/aidl/default/Led.h	/^namespace aidl {$/;"	n
+all	02-Android-Linux-Kernel/character-device-driver/Makefile	/^all:$/;"	t
+arpi	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^namespace arpi::hardware::demoled::implementation {$/;"	n	file:
+arpi	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.h	/^namespace arpi::hardware::demoled::implementation {$/;"	n
+btn_interrupt_handle	08-Input-Framework/input_driver/input_driver.c	/^static irqreturn_t btn_interrupt_handle(int irq, void *dev_id)$/;"	f	typeref:typename:irqreturn_t	file:
+char_class	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^static struct class*  char_class  = NULL;$/;"	v	typeref:struct:class *	file:
+char_dev	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^static struct device* char_dev = NULL;$/;"	v	typeref:struct:device *	file:
+chr_module_exit	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^static void chr_module_exit(void){$/;"	f	typeref:typename:void	file:
+chr_module_init	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^static int chr_module_init(void){$/;"	f	typeref:typename:int	file:
+clean	02-Android-Linux-Kernel/character-device-driver/Makefile	/^clean:$/;"	t
+cocktail	03-Hardware-Abstraction-Layer/aidl/default/Led.cpp	/^namespace cocktail {$/;"	n	namespace:aidl::vendor	file:
+cocktail	03-Hardware-Abstraction-Layer/aidl/default/Led.h	/^namespace cocktail {$/;"	n	namespace:aidl::vendor
+demo_get_led_status	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.c	/^int demo_get_led_status(struct demo_led_ctrl self)$/;"	f	typeref:typename:int
+demo_get_led_status	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.c	/^int demo_get_led_status(struct demo_led_ctrl self)$/;"	f	typeref:typename:int
+demo_input_driver	08-Input-Framework/input_driver/input_driver.c	/^static struct platform_driver demo_input_driver = {$/;"	v	typeref:struct:platform_driver	file:
+demo_input_probe	08-Input-Framework/input_driver/input_driver.c	/^static int demo_input_probe(struct platform_device *pdev)$/;"	f	typeref:typename:int	file:
+demo_input_remove	08-Input-Framework/input_driver/input_driver.c	/^static int demo_input_remove(struct platform_device *pdev)$/;"	f	typeref:typename:int	file:
+demo_input_table	08-Input-Framework/input_driver/input_driver.c	/^static struct of_device_id demo_input_table[] = {$/;"	v	typeref:struct:of_device_id[]	file:
+demo_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.h	/^		struct demo_led_ctrl demo_led;$/;"	m	struct:arpi::hardware::demoled::implementation::Demoled	typeref:struct:demo_led_ctrl
+demo_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo.cpp	/^		struct demo_led_ctrl demo_led;$/;"	m	struct:DemoLed	typeref:struct:demo_led_ctrl	file:
+demo_led_cleanup	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.c	/^void demo_led_cleanup(struct demo_led_ctrl *self)$/;"	f	typeref:typename:void
+demo_led_cleanup	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.c	/^void demo_led_cleanup(struct demo_led_ctrl *self)$/;"	f	typeref:typename:void
+demo_led_ctrl	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.h	/^struct demo_led_ctrl {$/;"	s
+demo_led_ctrl	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.h	/^struct demo_led_ctrl {$/;"	s
+demo_led_device	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^struct demo_led_device {$/;"	s	file:
+demo_led_device	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^struct demo_led_device {$/;"	s	file:
+demo_led_driver	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^static struct platform_driver demo_led_driver = {$/;"	v	typeref:struct:platform_driver	file:
+demo_led_driver	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^static struct platform_driver demo_led_driver = {$/;"	v	typeref:struct:platform_driver	file:
+demo_led_init	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.c	/^struct demo_led_ctrl demo_led_init()$/;"	f	typeref:struct:demo_led_ctrl
+demo_led_init	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.c	/^struct demo_led_ctrl demo_led_init()$/;"	f	typeref:struct:demo_led_ctrl
+demo_led_probe	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^static int demo_led_probe(struct platform_device *pdev)$/;"	f	typeref:typename:int	file:
+demo_led_probe	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^static int demo_led_probe(struct platform_device *pdev)$/;"	f	typeref:typename:int	file:
+demo_led_remove	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^static int demo_led_remove(struct platform_device *pdev)$/;"	f	typeref:typename:int	file:
+demo_led_remove	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^static int demo_led_remove(struct platform_device *pdev)$/;"	f	typeref:typename:int	file:
+demo_led_show	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^static ssize_t demo_led_show(struct device *dev, struct device_attribute *attr,$/;"	f	typeref:typename:ssize_t	file:
+demo_led_show	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^static ssize_t demo_led_show(struct device *dev, struct device_attribute *attr,$/;"	f	typeref:typename:ssize_t	file:
+demo_led_store	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^static ssize_t demo_led_store(struct device *dev, struct device_attribute *attr,$/;"	f	typeref:typename:ssize_t	file:
+demo_led_store	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^static ssize_t demo_led_store(struct device *dev, struct device_attribute *attr,$/;"	f	typeref:typename:ssize_t	file:
+demo_led_table	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^static struct of_device_id demo_led_table[] = {$/;"	v	typeref:struct:of_device_id[]	file:
+demo_led_table	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^static struct of_device_id demo_led_table[] = {$/;"	v	typeref:struct:of_device_id[]	file:
+demo_turn_off_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.c	/^void demo_turn_off_led(struct demo_led_ctrl self)$/;"	f	typeref:typename:void
+demo_turn_off_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.c	/^void demo_turn_off_led(struct demo_led_ctrl self)$/;"	f	typeref:typename:void
+demo_turn_on_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.c	/^void demo_turn_on_led(struct demo_led_ctrl self)$/;"	f	typeref:typename:void
+demo_turn_on_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.c	/^void demo_turn_on_led(struct demo_led_ctrl self)$/;"	f	typeref:typename:void
+demoled	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^namespace arpi::hardware::demoled::implementation {$/;"	n	namespace:arpi::hardware	file:
+demoled	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.h	/^namespace arpi::hardware::demoled::implementation {$/;"	n	namespace:arpi::hardware
+demoled_path	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.h	/^	const char *demoled_path;$/;"	m	struct:demo_led_ctrl	typeref:typename:const char *
+demoled_path	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.h	/^	const char *demoled_path;$/;"	m	struct:demo_led_ctrl	typeref:typename:const char *
+desc	08-Input-Framework/input_driver/input_driver.c	/^	struct gpio_desc *desc;$/;"	m	struct:gpio_data	typeref:struct:gpio_desc *	file:
+dev	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^	struct device *dev;$/;"	m	struct:demo_led_device	typeref:struct:device *	file:
+dev	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^	struct device *dev;$/;"	m	struct:demo_led_device	typeref:struct:device *	file:
+epoll_ctl_add_files	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/get_input.c	/^int epoll_ctl_add_files(int epoll_fd, struct list_file *list, int *list_fd,$/;"	f	typeref:typename:int
+file_name	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/list_files.h	/^	const char *file_name;$/;"	m	struct:list_file	typeref:typename:const char *
+getLed	03-Hardware-Abstraction-Layer/aidl/default/Led.cpp	/^ndk::ScopedAStatus Led::getLed(int32_t* _aidl_return) {$/;"	f	class:aidl::vendor::cocktail::hardware::led::Led	typeref:typename:ndk::ScopedAStatus
+get_led_status	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.c	/^int get_led_status(struct demo_led_ctrl self)$/;"	f	typeref:typename:int
+get_led_status	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.h	/^	int (*get_led_status)(struct demo_led_ctrl self);$/;"	m	struct:demo_led_ctrl	typeref:typename:int (*)(struct demo_led_ctrl self)
+get_led_status	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo2.c	/^int get_led_status()$/;"	f	typeref:typename:int
+get_led_status	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.c	/^int get_led_status(struct demo_led_ctrl self)$/;"	f	typeref:typename:int
+get_led_status	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.h	/^	int (*get_led_status)(struct demo_led_ctrl self);$/;"	m	struct:demo_led_ctrl	typeref:typename:int (*)(struct demo_led_ctrl self)
+gpio_arr	08-Input-Framework/input_driver/input_driver.c	/^	struct gpio_data gpio_arr[NUMBER_OF_GPIO_PIN];$/;"	m	struct:input_driver_data	typeref:struct:gpio_data[]	file:
+gpio_data	08-Input-Framework/input_driver/input_driver.c	/^struct gpio_data {$/;"	s	file:
+hardware	03-Hardware-Abstraction-Layer/aidl/default/Led.cpp	/^namespace hardware {$/;"	n	namespace:aidl::vendor::cocktail	file:
+hardware	03-Hardware-Abstraction-Layer/aidl/default/Led.h	/^namespace hardware {$/;"	n	namespace:aidl::vendor::cocktail
+hardware	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^namespace arpi::hardware::demoled::implementation {$/;"	n	namespace:arpi	file:
+hardware	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.h	/^namespace arpi::hardware::demoled::implementation {$/;"	n	namespace:arpi
+implementation	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^namespace arpi::hardware::demoled::implementation {$/;"	n	namespace:arpi::hardware::demoled	file:
+implementation	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.h	/^namespace arpi::hardware::demoled::implementation {$/;"	n	namespace:arpi::hardware::demoled
+input_dev	08-Input-Framework/input_driver/input_driver.c	/^	struct input_dev *input_dev;$/;"	m	struct:input_driver_data	typeref:struct:input_dev *	file:
+input_driver_data	08-Input-Framework/input_driver/input_driver.c	/^struct input_driver_data {$/;"	s	file:
+install	02-Android-Linux-Kernel/character-device-driver/Makefile	/^install:$/;"	t
+irq_arr	08-Input-Framework/input_driver/input_driver.c	/^	int irq_arr[NUMBER_OF_GPIO_PIN];$/;"	m	struct:input_driver_data	typeref:typename:int[]	file:
+key_event	08-Input-Framework/input_driver/input_driver.c	/^	int key_event;$/;"	m	struct:gpio_data	typeref:typename:int	file:
+key_event_arr	08-Input-Framework/input_driver/input_driver.c	/^const int key_event_arr[NUMBER_OF_GPIO_PIN] = {KEY_BACK, KEY_ENTER, KEY_UP,$/;"	v	typeref:typename:const int[]
+key_name_arr	08-Input-Framework/input_driver/input_driver.c	/^const char *key_name_arr[NUMBER_OF_GPIO_PIN] = {BACK_KEY, ENTER_KEY, UP_KEY,$/;"	v	typeref:typename:const char * []
+led	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^	struct gpio_desc *led;$/;"	m	struct:demo_led_device	typeref:struct:gpio_desc *	file:
+led	03-Hardware-Abstraction-Layer/aidl/default/Led.cpp	/^namespace led {$/;"	n	namespace:aidl::vendor::cocktail::hardware	file:
+led	03-Hardware-Abstraction-Layer/aidl/default/Led.h	/^namespace led {$/;"	n	namespace:aidl::vendor::cocktail::hardware
+led	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^	struct gpio_desc *led;$/;"	m	struct:demo_led_device	typeref:struct:gpio_desc *	file:
+led_	09-VTS/vts/VtsAidlLedTest.cpp	/^    std::shared_ptr<ILed> led_;$/;"	m	class:LedAidl	typeref:typename:std::shared_ptr<ILed>	file:
+list_dir	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/list_files.c	/^struct list_file *list_dir(const char *path) {$/;"	f	typeref:struct:list_file *
+list_file	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/list_files.h	/^struct list_file {$/;"	s
+lock	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^	struct mutex lock;$/;"	m	struct:demo_led_device	typeref:struct:mutex	file:
+lock	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^	struct mutex lock;$/;"	m	struct:demo_led_device	typeref:struct:mutex	file:
+lock	08-Input-Framework/input_driver/input_driver.c	/^	spinlock_t lock;$/;"	m	struct:input_driver_data	typeref:typename:spinlock_t	file:
+main	03-Hardware-Abstraction-Layer/aidl/default/service.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/service.cpp	/^int main(int \/* argc *\/, char* \/* argv *\/ []) {$/;"	f	typeref:typename:int
+main	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/tests/demoled_test.cpp	/^int main()$/;"	f	typeref:typename:int
+main	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo.c	/^int main()$/;"	f	typeref:typename:int
+main	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo.cpp	/^int main()$/;"	f	typeref:typename:int
+main	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo2.c	/^int main () {$/;"	f	typeref:typename:int
+main	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/get_input.c	/^int main()$/;"	f	typeref:typename:int
+main	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/get_input_bk.c	/^int main() {$/;"	f	typeref:typename:int
+main	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/input_get.c	/^int main() {$/;"	f	typeref:typename:int
+main	09-VTS/vts/VtsAidlLedTest.cpp	/^int main(int argc, char** argv) {$/;"	f	typeref:typename:int
+majorNumber	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^static int majorNumber = 0;$/;"	v	typeref:typename:int	file:
+my_read	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^static ssize_t my_read(struct file *filp, char *buf, size_t count, loff_t *f_pos) {$/;"	f	typeref:typename:ssize_t	file:
+my_write	02-Android-Linux-Kernel/character-device-driver/char_dev.c	/^static ssize_t my_write(struct file *filp, const char *buf, size_t count, loff_t *f_pos) {$/;"	f	typeref:typename:ssize_t	file:
+name	08-Input-Framework/input_driver/input_driver.c	/^	const char *name;$/;"	m	struct:gpio_data	typeref:typename:const char *	file:
+next	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/list_files.h	/^	struct list_file *next;$/;"	m	struct:list_file	typeref:struct:list_file *
+number_of_files	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/list_files.c	/^int number_of_files(struct list_file *list)$/;"	f	typeref:typename:int
+obj-m	02-Android-Linux-Kernel/character-device-driver/Makefile	/^obj-m := $(BINARY).o$/;"	m
+pdev	02-Android-Linux-Kernel/led-device-driver/demo_led.c	/^	struct platform_device *pdev;$/;"	m	struct:demo_led_device	typeref:struct:platform_device *	file:
+pdev	03-Hardware-Abstraction-Layer/hidl/led_driver/demo_led.c	/^	struct platform_device *pdev;$/;"	m	struct:demo_led_device	typeref:struct:platform_device *	file:
+pdev	08-Input-Framework/input_driver/input_driver.c	/^	struct platform_device *pdev;$/;"	m	struct:input_driver_data	typeref:struct:platform_device *	file:
+read_input_event	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/get_input.c	/^void read_input_event(int fd)$/;"	f	typeref:typename:void
+read_input_event	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/input_get.c	/^void read_input_event(const char *file_path)$/;"	f	typeref:typename:void
+read_led_stat	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo.cpp	/^	int read_led_stat()$/;"	f	struct:DemoLed	typeref:typename:int	file:
+read_led_status	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^Return<int32_t> Demoled::read_led_status() {$/;"	f	class:arpi::hardware::demoled::implementation::Demoled	typeref:typename:Return<int32_t>
+remove	02-Android-Linux-Kernel/character-device-driver/Makefile	/^remove:$/;"	t
+setLed	03-Hardware-Abstraction-Layer/aidl/default/Led.cpp	/^ndk::ScopedAStatus Led::setLed(int32_t in_status) {$/;"	f	class:aidl::vendor::cocktail::hardware::led::Led	typeref:typename:ndk::ScopedAStatus
+set_demo_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.c	/^void set_demo_led(struct demo_led_ctrl self, int value)$/;"	f	typeref:typename:void
+set_demo_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.c	/^void set_demo_led(struct demo_led_ctrl self, int value)$/;"	f	typeref:typename:void
+turn_led_off	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^Return<void> Demoled::turn_led_off() {$/;"	f	class:arpi::hardware::demoled::implementation::Demoled	typeref:typename:Return<void>
+turn_led_off	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo.cpp	/^	void turn_led_off()$/;"	f	struct:DemoLed	typeref:typename:void	file:
+turn_led_on	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^Return<void> Demoled::turn_led_on() {$/;"	f	class:arpi::hardware::demoled::implementation::Demoled	typeref:typename:Return<void>
+turn_led_on	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo.cpp	/^	void turn_led_on()$/;"	f	struct:DemoLed	typeref:typename:void	file:
+turn_off_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.h	/^	void (*turn_off_led)(struct demo_led_ctrl self);$/;"	m	struct:demo_led_ctrl	typeref:typename:void (*)(struct demo_led_ctrl self)
+turn_off_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.h	/^	void (*turn_off_led)(struct demo_led_ctrl self);$/;"	m	struct:demo_led_ctrl	typeref:typename:void (*)(struct demo_led_ctrl self)
+turn_on_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/demoled_ctrl.h	/^	void (*turn_on_led)(struct demo_led_ctrl self);$/;"	m	struct:demo_led_ctrl	typeref:typename:void (*)(struct demo_led_ctrl self)
+turn_on_led	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demoled_ctrl.h	/^	void (*turn_on_led)(struct demo_led_ctrl self);$/;"	m	struct:demo_led_ctrl	typeref:typename:void (*)(struct demo_led_ctrl self)
+vendor	03-Hardware-Abstraction-Layer/aidl/default/Led.cpp	/^namespace vendor {$/;"	n	namespace:aidl	file:
+vendor	03-Hardware-Abstraction-Layer/aidl/default/Led.h	/^namespace vendor {$/;"	n	namespace:aidl
+~DemoLed	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/lib/demo.cpp	/^	~DemoLed()$/;"	f	struct:DemoLed	file:
+~Demoled	03-Hardware-Abstraction-Layer/hidl/led_hal/demoled/1.0/default/Demoled.cpp	/^Demoled::~Demoled() {$/;"	f	class:arpi::hardware::demoled::implementation::Demoled
